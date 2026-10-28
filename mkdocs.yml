@@ -1,0 +1,109 @@
+site_name: Computer Vision Mastery Path
+site_description: A free computer vision course — OpenCV fundamentals, CNNs, object detection, segmentation, tracking, OCR and vision transformers.
+site_url: https://sigilipelli.github.io/computer-vision-mastery-path/
+repo_url: https://github.com/sigilipelli/computer-vision-mastery-path
+repo_name: computer-vision-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Image Fundamentals & Classical CV":
+      - Overview: level-1/index.md
+      - "01 · Images as Arrays: Pixels, Channels & Color Spaces": level-1/01-images-as-arrays.md
+      - "02 · Image I/O, Resizing & Color Space Conversions": level-1/02-image-io-resizing-colorspaces.md
+      - "03 · Filtering & Convolution: Blur, Sharpen, Edge Detection": level-1/03-filtering-convolution.md
+      - "04 · Thresholding & Morphological Operations": level-1/04-thresholding-morphology.md
+      - "05 · Contours & Shape Analysis": level-1/05-contours-shape-analysis.md
+      - "06 · Feature Detection: Corners, Keypoints & Descriptors": level-1/06-feature-detection.md
+      - "07 · Feature Matching & Homography: Aligning Images": level-1/07-feature-matching-homography.md
+      - "08 · Image Augmentation for Training": level-1/08-image-augmentation.md
+      - "09 · Classical Object Detection: Template Matching & Haar Cascades": level-1/09-classical-object-detection.md
+      - "10 · Project — a Real Classical CV Pipeline (Document Scanner)": level-1/10-project-document-scanner.md
+  - "Level 2 · CNNs & Image Classification":
+      - Overview: level-2/index.md
+      - "01 · Why CNNs: Convolution, Pooling & Receptive Fields": level-2/01-why-cnns.md
+      - "02 · Building a CNN From Scratch in PyTorch": level-2/02-building-a-cnn.md
+      - "03 · Training a Real Image Classifier": level-2/03-training-a-real-classifier.md
+      - "04 · Data Augmentation & Regularization for Vision Models": level-2/04-augmentation-regularization.md
+      - "05 · CNN Architectures: ResNet & Pretrained Backbones": level-2/05-cnn-architectures-resnet.md
+      - "06 · Transfer Learning & Fine-Tuning a Pretrained Model": level-2/06-transfer-learning.md
+      - "07 · Evaluating Vision Models: Confusion Matrices & Per-Class Metrics": level-2/07-evaluating-vision-models.md
+      - "08 · Visualizing What a CNN Learned": level-2/08-visualizing-cnn-features.md
+      - "09 · Class Imbalance & Hard Examples in Vision": level-2/09-class-imbalance-vision.md
+      - "10 · Project — a Real Image Classifier Trained End to End": level-2/10-project-real-classifier.md
+  - "Level 3 · Detection, Segmentation & Motion":
+      - Overview: level-3/index.md
+      - "01 · Object Detection Fundamentals: Boxes, IoU & Anchors": level-3/01-object-detection-fundamentals.md
+      - "02 · Running & Evaluating a Real Object Detector": level-3/02-running-a-real-detector.md
+      - "03 · Semantic Segmentation Fundamentals": level-3/03-semantic-segmentation-fundamentals.md
+      - "04 · Running a Real Segmentation Model": level-3/04-running-a-real-segmentation-model.md
+      - "05 · Instance Segmentation vs Semantic Segmentation": level-3/05-instance-vs-semantic-segmentation.md
+      - "06 · Pose Estimation & Keypoint Detection": level-3/06-pose-estimation-keypoints.md
+      - "07 · Optical Flow: Measuring Motion Between Frames": level-3/07-optical-flow.md
+      - "08 · Object Tracking Across Video Frames": level-3/08-object-tracking.md
+      - "09 · OCR: Detecting & Recognizing Text in Images": level-3/09-ocr-text-detection-recognition.md
+      - "10 · Project — a Real Multi-Stage Vision Pipeline": level-3/10-project-multi-stage-pipeline.md
+  - "Level 4 · Modern Architectures & Production CV":
+      - Overview: level-4/index.md
+      - "01 · Vision Transformers: Concepts & Real Inference": level-4/01-vision-transformers.md
+      - "02 · Image Embeddings & Similarity Search": level-4/02-image-embeddings-similarity-search.md
+      - "03 · Self-Supervised & Few-Shot Vision Concepts": level-4/03-self-supervised-few-shot.md
+      - "04 · Image Generation Basics: GANs & Diffusion": level-4/04-image-generation-basics.md
+      - "05 · Evaluating Generative & Retrieval Vision Systems": level-4/05-evaluating-generative-retrieval.md
+      - "06 · Scaling Vision Inference: Batching & Latency": level-4/06-scaling-vision-inference.md
+      - "07 · Vision Model Robustness & Common Failure Modes": level-4/07-vision-model-robustness.md
+      - "08 · Bias & Fairness Considerations in Computer Vision": level-4/08-bias-fairness-in-cv.md
+      - "09 · Choosing the Right CV Approach for a Real Problem": level-4/09-choosing-the-right-approach.md
+      - "10 · Capstone — a Real End-to-End Computer Vision Application": level-4/10-capstone-end-to-end-cv-application.md
