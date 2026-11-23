@@ -77,11 +77,13 @@ extra:
     - name: "Claude Training"
       url: https://learnmasterypath.com/claude-training-mastery-path/
 
+not_in_nav: |
+  privacy.md
+  license.md
+
 nav:
   - Home: index.md
   - "💼 Interview Questions": interview-questions.md
-  - Privacy Policy: privacy.md
-  - License: license.md
   - "Level 1 · Image Fundamentals & Classical CV":
       - Overview: level-1/index.md
       - "01 · Images as Arrays: Pixels, Channels & Color Spaces": level-1/01-images-as-arrays.md
