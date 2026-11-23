@@ -83,7 +83,7 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
+  - Interview Questions: interview-questions.md
   - "Level 1 · Image Fundamentals & Classical CV":
       - Overview: level-1/index.md
       - "01 · Images as Arrays: Pixels, Channels & Color Spaces": level-1/01-images-as-arrays.md
@@ -132,5 +132,5 @@ nav:
       - "08 · Bias & Fairness Considerations in Computer Vision": level-4/08-bias-fairness-in-cv.md
       - "09 · Choosing the Right CV Approach for a Real Problem": level-4/09-choosing-the-right-approach.md
       - "10 · Capstone — a Real End-to-End Computer Vision Application": level-4/10-capstone-end-to-end-cv-application.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
