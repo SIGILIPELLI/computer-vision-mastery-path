@@ -1,6 +1,6 @@
 ---
 title: "Free Computer Vision Course: OpenCV, CNNs, Detection, Segmentation & Tracking"
-description: "Free computer vision course: 36 lessons and 4 projects on OpenCV, CNNs, object detection, segmentation, tracking, OCR and vision transformers."
+description: "Free computer vision course: 36 lessons, 3 projects and 1 capstone on OpenCV, CNNs, object detection, segmentation, tracking, OCR and vision transformers."
 ---
 
 # Computer Vision Mastery Path
@@ -33,7 +33,7 @@ desktop/cloud-scale compute throughout.
 | **3 · Detection, Segmentation & Motion** | Object detection, segmentation, pose, optical flow, tracking, OCR | 10 | Run and evaluate real detection/segmentation/tracking models |
 | **4 · Modern Architectures & Production CV** | Vision transformers, embeddings, generation, robustness, bias, scaling | 10 | Choose, evaluate and ship a real, modern vision system |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons, 3 projects and 1 capstone** in total.
 
 ## How to use this site
 
