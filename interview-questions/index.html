@@ -1,0 +1,4131 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="179 Computer Vision interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Computer Vision Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/computer-vision-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../level-1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Computer Vision Interview Questions and Answers (179 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Computer Vision Interview Questions and Answers (179 Questions)">
+  <meta property="og:description" content="179 Computer Vision interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Computer Vision Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/computer-vision-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Computer Vision Interview Questions and Answers (179 Questions)">
+  <meta name="twitter:description" content="179 Computer Vision interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Computer Vision Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Computer Vision Mastery Path", "item": "https://learnmasterypath.com/computer-vision-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/computer-vision-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "computer-vision-mastery-path", "name": "Computer Vision Mastery Path", "repo": "https://github.com/sigilipelli/computer-vision-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/computer-vision-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#computer-vision-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Computer Vision Mastery Path" class="md-header__button md-logo" aria-label="Computer Vision Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Computer Vision Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Computer Vision Interview Questions and Answers (179 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/computer-vision-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    computer-vision-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Image Fundamentals & Classical CV
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · CNNs & Image Classification
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Detection, Segmentation & Motion
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Modern Architectures & Production CV
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Computer Vision Mastery Path" class="md-nav__button md-logo" aria-label="Computer Vision Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Computer Vision Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/computer-vision-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    computer-vision-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-image-fundamentals-classical-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Image Fundamentals &amp; Classical CV
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Image Fundamentals &amp; Classical CV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#images-as-arrays-pixels-channels-color-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Images as Arrays: Pixels, Channels &amp; Color Spaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-io-resizing-color-space-conversions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image I/O, Resizing &amp; Color Space Conversions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering-convolution-blur-sharpen-edge-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtering &amp; Convolution: Blur, Sharpen, Edge Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thresholding-morphological-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thresholding &amp; Morphological Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contours-shape-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contours &amp; Shape Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-detection-corners-keypoints-descriptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Detection: Corners, Keypoints &amp; Descriptors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-matching-homography-aligning-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Matching &amp; Homography: Aligning Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-augmentation-for-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Augmentation for Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classical-object-detection-template-matching-haar-cascades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classical Object Detection: Template Matching &amp; Haar Cascades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-classical-cv-pipeline-document-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: a Real Classical CV Pipeline (Document Scanner)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-cnns-image-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · CNNs &amp; Image Classification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · CNNs &amp; Image Classification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-cnns-convolution-pooling-receptive-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why CNNs: Convolution, Pooling &amp; Receptive Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-cnn-from-scratch-in-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building a CNN From Scratch in PyTorch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-a-real-image-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training a Real Image Classifier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation-regularization-for-vision-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Augmentation &amp; Regularization for Vision Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn-architectures-resnet-pretrained-backbones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CNN Architectures: ResNet &amp; Pretrained Backbones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-learning-fine-tuning-a-pretrained-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transfer Learning &amp; Fine-Tuning a Pretrained Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-vision-models-confusion-matrices-per-class-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Vision Models: Confusion Matrices &amp; Per-Class Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizing-what-a-cnn-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizing What a CNN Learned
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-imbalance-hard-examples-in-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Imbalance &amp; Hard Examples in Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-image-classifier-trained-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: a Real Image Classifier Trained End to End
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-detection-segmentation-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Detection, Segmentation &amp; Motion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Detection, Segmentation &amp; Motion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-detection-fundamentals-boxes-iou-anchors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Detection Fundamentals: Boxes, IoU &amp; Anchors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-evaluating-a-real-object-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running &amp; Evaluating a Real Object Detector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-segmentation-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Segmentation Fundamentals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-real-segmentation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running a Real Segmentation Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-segmentation-vs-semantic-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance Segmentation vs Semantic Segmentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pose-estimation-keypoint-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pose Estimation &amp; Keypoint Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optical-flow-measuring-motion-between-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optical Flow: Measuring Motion Between Frames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-tracking-across-video-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Tracking Across Video Frames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocr-detecting-recognizing-text-in-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR: Detecting &amp; Recognizing Text in Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-multi-stage-vision-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: a Real Multi-Stage Vision Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-modern-architectures-production-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Modern Architectures &amp; Production CV
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Modern Architectures &amp; Production CV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vision-transformers-concepts-real-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision Transformers: Concepts &amp; Real Inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-embeddings-similarity-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Embeddings &amp; Similarity Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-supervised-few-shot-vision-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Supervised &amp; Few-Shot Vision Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-generation-basics-gans-diffusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Generation Basics: GANs &amp; Diffusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-generative-retrieval-vision-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Generative &amp; Retrieval Vision Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-vision-inference-batching-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaling Vision Inference: Batching &amp; Latency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vision-model-robustness-common-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision Model Robustness &amp; Common Failure Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-fairness-considerations-in-computer-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bias &amp; Fairness Considerations in Computer Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-the-right-cv-approach-for-a-real-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing the Right CV Approach for a Real Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capstone-a-real-end-to-end-computer-vision-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capstone: a Real End-to-End Computer Vision Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intersection-over-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intersection over Union
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-class-precision-recall-and-f1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-class precision, recall and F1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Image Fundamentals & Classical CV
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Image Fundamentals & Classical CV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-images-as-arrays/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Images as Arrays: Pixels, Channels & Color Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-image-io-resizing-colorspaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Image I/O, Resizing & Color Space Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-filtering-convolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Filtering & Convolution: Blur, Sharpen, Edge Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-thresholding-morphology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Thresholding & Morphological Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-contours-shape-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Contours & Shape Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-feature-detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Feature Detection: Corners, Keypoints & Descriptors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-feature-matching-homography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Feature Matching & Homography: Aligning Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-image-augmentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Image Augmentation for Training
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-classical-object-detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Classical Object Detection: Template Matching & Haar Cascades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-document-scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — a Real Classical CV Pipeline (Document Scanner)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · CNNs & Image Classification
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · CNNs & Image Classification
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-why-cnns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Why CNNs: Convolution, Pooling & Receptive Fields
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-building-a-cnn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Building a CNN From Scratch in PyTorch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-training-a-real-classifier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Training a Real Image Classifier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-augmentation-regularization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Data Augmentation & Regularization for Vision Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-cnn-architectures-resnet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · CNN Architectures: ResNet & Pretrained Backbones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-transfer-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Transfer Learning & Fine-Tuning a Pretrained Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-evaluating-vision-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Evaluating Vision Models: Confusion Matrices & Per-Class Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-visualizing-cnn-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Visualizing What a CNN Learned
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-class-imbalance-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Class Imbalance & Hard Examples in Vision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-real-classifier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — a Real Image Classifier Trained End to End
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Detection, Segmentation & Motion
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Detection, Segmentation & Motion
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-object-detection-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Object Detection Fundamentals: Boxes, IoU & Anchors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-running-a-real-detector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Running & Evaluating a Real Object Detector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-semantic-segmentation-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Semantic Segmentation Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-running-a-real-segmentation-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Running a Real Segmentation Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-instance-vs-semantic-segmentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Instance Segmentation vs Semantic Segmentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-pose-estimation-keypoints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Pose Estimation & Keypoint Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-optical-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Optical Flow: Measuring Motion Between Frames
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-object-tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Object Tracking Across Video Frames
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-ocr-text-detection-recognition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · OCR: Detecting & Recognizing Text in Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-multi-stage-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — a Real Multi-Stage Vision Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Modern Architectures & Production CV
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Modern Architectures & Production CV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-vision-transformers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Vision Transformers: Concepts & Real Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-image-embeddings-similarity-search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Image Embeddings & Similarity Search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-self-supervised-few-shot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Self-Supervised & Few-Shot Vision Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-image-generation-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Image Generation Basics: GANs & Diffusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-evaluating-generative-retrieval/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Evaluating Generative & Retrieval Vision Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-scaling-vision-inference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Scaling Vision Inference: Batching & Latency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-vision-model-robustness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Vision Model Robustness & Common Failure Modes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-bias-fairness-in-cv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Bias & Fairness Considerations in Computer Vision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-choosing-the-right-approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Choosing the Right CV Approach for a Real Problem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone-end-to-end-cv-application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — a Real End-to-End Computer Vision Application
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-image-fundamentals-classical-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Image Fundamentals &amp; Classical CV
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Image Fundamentals &amp; Classical CV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#images-as-arrays-pixels-channels-color-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Images as Arrays: Pixels, Channels &amp; Color Spaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-io-resizing-color-space-conversions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image I/O, Resizing &amp; Color Space Conversions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering-convolution-blur-sharpen-edge-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtering &amp; Convolution: Blur, Sharpen, Edge Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thresholding-morphological-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thresholding &amp; Morphological Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contours-shape-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contours &amp; Shape Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-detection-corners-keypoints-descriptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Detection: Corners, Keypoints &amp; Descriptors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-matching-homography-aligning-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Matching &amp; Homography: Aligning Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-augmentation-for-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Augmentation for Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classical-object-detection-template-matching-haar-cascades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classical Object Detection: Template Matching &amp; Haar Cascades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-classical-cv-pipeline-document-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: a Real Classical CV Pipeline (Document Scanner)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-cnns-image-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · CNNs &amp; Image Classification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · CNNs &amp; Image Classification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-cnns-convolution-pooling-receptive-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why CNNs: Convolution, Pooling &amp; Receptive Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-cnn-from-scratch-in-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building a CNN From Scratch in PyTorch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-a-real-image-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training a Real Image Classifier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation-regularization-for-vision-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Augmentation &amp; Regularization for Vision Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn-architectures-resnet-pretrained-backbones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CNN Architectures: ResNet &amp; Pretrained Backbones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-learning-fine-tuning-a-pretrained-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transfer Learning &amp; Fine-Tuning a Pretrained Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-vision-models-confusion-matrices-per-class-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Vision Models: Confusion Matrices &amp; Per-Class Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizing-what-a-cnn-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizing What a CNN Learned
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-imbalance-hard-examples-in-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Imbalance &amp; Hard Examples in Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-image-classifier-trained-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: a Real Image Classifier Trained End to End
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-detection-segmentation-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Detection, Segmentation &amp; Motion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Detection, Segmentation &amp; Motion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-detection-fundamentals-boxes-iou-anchors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Detection Fundamentals: Boxes, IoU &amp; Anchors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-evaluating-a-real-object-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running &amp; Evaluating a Real Object Detector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-segmentation-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Segmentation Fundamentals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-real-segmentation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running a Real Segmentation Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-segmentation-vs-semantic-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance Segmentation vs Semantic Segmentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pose-estimation-keypoint-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pose Estimation &amp; Keypoint Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optical-flow-measuring-motion-between-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optical Flow: Measuring Motion Between Frames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-tracking-across-video-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Object Tracking Across Video Frames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocr-detecting-recognizing-text-in-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR: Detecting &amp; Recognizing Text in Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-multi-stage-vision-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: a Real Multi-Stage Vision Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-modern-architectures-production-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Modern Architectures &amp; Production CV
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Modern Architectures &amp; Production CV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vision-transformers-concepts-real-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision Transformers: Concepts &amp; Real Inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-embeddings-similarity-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Embeddings &amp; Similarity Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-supervised-few-shot-vision-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Supervised &amp; Few-Shot Vision Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-generation-basics-gans-diffusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Generation Basics: GANs &amp; Diffusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-generative-retrieval-vision-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Generative &amp; Retrieval Vision Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-vision-inference-batching-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaling Vision Inference: Batching &amp; Latency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vision-model-robustness-common-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision Model Robustness &amp; Common Failure Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-fairness-considerations-in-computer-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bias &amp; Fairness Considerations in Computer Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-the-right-cv-approach-for-a-real-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing the Right CV Approach for a Real Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capstone-a-real-end-to-end-computer-vision-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capstone: a Real End-to-End Computer Vision Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intersection-over-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intersection over Union
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-class-precision-recall-and-f1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-class precision, recall and F1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="computer-vision-interview-questions-and-answers">Computer Vision Interview Questions and Answers<a class="headerlink" href="#computer-vision-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>179 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free Computer Vision Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-image-fundamentals-classical-cv">Level 1 · Image Fundamentals &amp; Classical CV<a class="headerlink" href="#level-1-image-fundamentals-classical-cv" title="Permanent link">&para;</a></h2>
+<h3 id="images-as-arrays-pixels-channels-color-spaces"><a href="../level-1/01-images-as-arrays/">Images as Arrays: Pixels, Channels &amp; Color Spaces</a><a class="headerlink" href="#images-as-arrays-pixels-channels-color-spaces" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> A color photo loaded as a NumPy array has shape (512, 512, 3). What does that mean?</p>
+<p><strong>Answer:</strong> 512 rows, 512 columns and 3 color channels per pixel</p>
+<p>Images are 3-D arrays of integers (height, width, channels).</p>
+<p><strong>Q2.</strong> OpenCV loads color images as BGR while most other libraries assume RGB. What's the classic symptom if you forget?</p>
+<p><strong>Answer:</strong> Colors look wrong: reds and blues swapped</p>
+<p>Convert with cv2.cvtColor when passing images between libraries.</p>
+<p><strong>Q3.</strong> What is the usual dtype and value range of an 8-bit image?</p>
+<p><strong>Answer:</strong> uint8, 0 to 255</p>
+<p>Arithmetic on uint8 can overflow or wrap, so convert before math.</p>
+<p><strong>Q4.</strong> Why is HSV useful for color-based segmentation?</p>
+<p><strong>Answer:</strong> It separates hue from brightness, so a color can be selected more robustly under lighting changes</p>
+<p>Hue/saturation/value are easier to threshold than RGB.</p>
+<h3 id="image-io-resizing-color-space-conversions"><a href="../level-1/02-image-io-resizing-colorspaces/">Image I/O, Resizing &amp; Color Space Conversions</a><a class="headerlink" href="#image-io-resizing-color-space-conversions" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> Which interpolation is the usual choice for shrinking an image?</p>
+<p><strong>Answer:</strong> INTER_AREA</p>
+<p>Area averaging reduces aliasing when downscaling.</p>
+<p><strong>Q6.</strong> You resize 1000x500 to 200x200. What goes wrong?</p>
+<p><strong>Answer:</strong> The aspect ratio is distorted; compute the other dimension from the ratio</p>
+<p>Preserve aspect ratio or pad.</p>
+<p><strong>Q7.</strong> Why measure interpolation quality with MSE against the original?</p>
+<p><strong>Answer:</strong> It gives a number for how much detail was lost after downscale-then-upscale</p>
+<p>Lower error means closer to the original.</p>
+<p><strong>Q8.</strong> Does an RGB to HSV and back round trip return the original?</p>
+<p><strong>Answer:</strong> Essentially yes, within small rounding differences</p>
+<p>Rounding to integers causes tiny differences.</p>
+<h3 id="filtering-convolution-blur-sharpen-edge-detection"><a href="../level-1/03-filtering-convolution/">Filtering &amp; Convolution: Blur, Sharpen, Edge Detection</a><a class="headerlink" href="#filtering-convolution-blur-sharpen-edge-detection" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What does convolving an image with a 3x3 box kernel do?</p>
+<p><strong>Answer:</strong> Averages each pixel with its neighbours, blurring the image</p>
+<p>The kernel slides across the image computing weighted sums.</p>
+<p><strong>Q10.</strong> Why did the hand-written convolution disagree with cv2.filter2D at first?</p>
+<p><strong>Answer:</strong> Border handling and correlation versus convolution details differ; padding mode must match</p>
+<p>The lesson investigated and resolved it.</p>
+<p><strong>Q11.</strong> Which kernel type responds strongly at edges?</p>
+<p><strong>Answer:</strong> A gradient kernel such as Sobel</p>
+<p>Edges are places where intensity changes quickly.</p>
+<p><strong>Q12.</strong> What does sharpening do conceptually?</p>
+<p><strong>Answer:</strong> Boosts high-frequency detail by subtracting a blurred version or using a center-weighted kernel</p>
+<p>It amplifies local differences.</p>
+<h3 id="thresholding-morphological-operations"><a href="../level-1/04-thresholding-morphology/">Thresholding &amp; Morphological Operations</a><a class="headerlink" href="#thresholding-morphological-operations" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> What advantage does Otsu's method have over a fixed threshold of 127?</p>
+<p><strong>Answer:</strong> It computes a threshold from the image's own histogram instead of guessing</p>
+<p>Data-computed beats guessed.</p>
+<p><strong>Q14.</strong> When is adaptive thresholding better than a global threshold?</p>
+<p><strong>Answer:</strong> When lighting varies across the image</p>
+<p>It computes a threshold per neighbourhood.</p>
+<p><strong>Q15.</strong> What does morphological opening do?</p>
+<p><strong>Answer:</strong> Erosion followed by dilation, removing small isolated noise</p>
+<p>Closing fills small holes.</p>
+<p><strong>Q16.</strong> What's morphological closing for?</p>
+<p><strong>Answer:</strong> Filling small gaps and holes inside foreground objects</p>
+<p>Dilation followed by erosion.</p>
+<h3 id="contours-shape-analysis"><a href="../level-1/05-contours-shape-analysis/">Contours &amp; Shape Analysis</a><a class="headerlink" href="#contours-shape-analysis" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> Why did area filtering alone not give the right coin count?</p>
+<p><strong>Answer:</strong> Non-coin blobs of similar area passed, so a shape measure like circularity was needed</p>
+<p>Combine area and circularity filters.</p>
+<p><strong>Q18.</strong> What does cv2.RETR_EXTERNAL return?</p>
+<p><strong>Answer:</strong> Only the outermost contours</p>
+<p>Others retrieve hierarchy.</p>
+<p><strong>Q19.</strong> What does circularity (4<em>pi</em>area/perimeter^2) equal for a perfect circle?</p>
+<p><strong>Answer:</strong> 1</p>
+<p>Lower values mean less round shapes.</p>
+<p><strong>Q20.</strong> What does the raw contour count include besides real objects?</p>
+<p><strong>Answer:</strong> Noise blobs and fragments, which is why filtering matters</p>
+<p>The lesson started at 33 raw contours.</p>
+<h3 id="feature-detection-corners-keypoints-descriptors"><a href="../level-1/06-feature-detection/">Feature Detection: Corners, Keypoints &amp; Descriptors</a><a class="headerlink" href="#feature-detection-corners-keypoints-descriptors" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What is a good keypoint?</p>
+<p><strong>Answer:</strong> A distinctive location (corner or blob) that can be found again in another view</p>
+<p>Descriptors then describe it for matching.</p>
+<p><strong>Q22.</strong> What does ORB provide that Harris corners alone don't?</p>
+<p><strong>Answer:</strong> Keypoints plus binary descriptors for matching</p>
+<p>Harris just finds corner responses.</p>
+<p><strong>Q23.</strong> The lesson measured ORB under 45-degree rotation and 2x scale. Why measure instead of assume?</p>
+<p><strong>Answer:</strong> Textbook invariance claims can be weaker in practice, especially for large scale changes</p>
+<p>Measure robustness.</p>
+<p><strong>Q24.</strong> What distinguishes SIFT from ORB?</p>
+<p><strong>Answer:</strong> SIFT uses floating-point descriptors and is heavier; ORB is fast with binary descriptors</p>
+<p>Trade accuracy against speed.</p>
+<h3 id="feature-matching-homography-aligning-images"><a href="../level-1/07-feature-matching-homography/">Feature Matching &amp; Homography: Aligning Images</a><a class="headerlink" href="#feature-matching-homography-aligning-images" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> What does RANSAC do in findHomography?</p>
+<p><strong>Answer:</strong> Fits the transform to inlier matches while ignoring outlier (wrong) matches</p>
+<p>Random sampling finds a consensus model.</p>
+<p><strong>Q26.</strong> What does a homography represent?</p>
+<p><strong>Answer:</strong> A 3x3 projective transform mapping points between two views of a plane</p>
+<p>Used for stitching and document alignment.</p>
+<p><strong>Q27.</strong> Why compare the recovered homography to a known ground truth?</p>
+<p><strong>Answer:</strong> To measure how accurately the algorithm recovers a transform it was never told</p>
+<p>Known truth gives real accuracy.</p>
+<p><strong>Q28.</strong> What happens if many matches are wrong and you skip RANSAC?</p>
+<p><strong>Answer:</strong> The estimated transform can be badly distorted by outliers</p>
+<p>Outliers need rejecting.</p>
+<h3 id="image-augmentation-for-training"><a href="../level-1/08-image-augmentation/">Image Augmentation for Training</a><a class="headerlink" href="#image-augmentation-for-training" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> Why use augmentation when training?</p>
+<p><strong>Answer:</strong> To expose the model to plausible variations and improve generalization</p>
+<p>Flips, crops and jitter simulate real variation.</p>
+<p><strong>Q30.</strong> What does SSIM measure?</p>
+<p><strong>Answer:</strong> Structural similarity between two images (1 is identical)</p>
+<p>It's a standard image-similarity metric.</p>
+<p><strong>Q31.</strong> What does cutout do?</p>
+<p><strong>Answer:</strong> Masks a random patch so the model can't rely on one region</p>
+<p>It acts as a regularizer.</p>
+<p><strong>Q32.</strong> When is a horizontal flip a bad augmentation?</p>
+<p><strong>Answer:</strong> When orientation carries meaning, such as digits or text</p>
+<p>Choose augmentations that preserve the label.</p>
+<h3 id="classical-object-detection-template-matching-haar-cascades"><a href="../level-1/09-classical-object-detection/">Classical Object Detection: Template Matching &amp; Haar Cascades</a><a class="headerlink" href="#classical-object-detection-template-matching-haar-cascades" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> What did the lesson find about Haar cascades in OpenCV 5.0?</p>
+<p><strong>Answer:</strong> This install no longer exposes CascadeClassifier</p>
+<p>An honest, current finding.</p>
+<p><strong>Q34.</strong> Where does template matching break?</p>
+<p><strong>Answer:</strong> With scale and rotation changes of the target</p>
+<p>It compares raw pixels at a fixed scale and orientation.</p>
+<p><strong>Q35.</strong> What does cv2.matchTemplate return?</p>
+<p><strong>Answer:</strong> A similarity map whose peak marks the best location</p>
+<p>Use minMaxLoc to find the peak.</p>
+<p><strong>Q36.</strong> Why is template matching dangerous when pushed beyond its limits?</p>
+<p><strong>Answer:</strong> It can return a confident-looking location that is wrong</p>
+<p>Always sanity-check peak scores.</p>
+<h3 id="project-a-real-classical-cv-pipeline-document-scanner"><a href="../level-1/10-project-document-scanner/">Project: a Real Classical CV Pipeline (Document Scanner)</a><a class="headerlink" href="#project-a-real-classical-cv-pipeline-document-scanner" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What are the document scanner's main steps?</p>
+<p><strong>Answer:</strong> Edges, find the page contour, order its four corners, perspective-warp, then threshold</p>
+<p>A classical pipeline.</p>
+<p><strong>Q38.</strong> Why order the four corners consistently?</p>
+<p><strong>Answer:</strong> The perspective transform needs matched source and destination corner order</p>
+<p>Typically top-left, top-right, bottom-right, bottom-left.</p>
+<p><strong>Q39.</strong> The project used a synthetic scene. What does the lesson say about that?</p>
+<p><strong>Answer:</strong> It states plainly that the input is synthetic while the pipeline is real</p>
+<p>Honesty about inputs.</p>
+<p><strong>Q40.</strong> What does getPerspectiveTransform produce?</p>
+<p><strong>Answer:</strong> A 3x3 matrix mapping four source points to four destination points</p>
+<p>warpPerspective applies it.</p>
+<h2 id="level-2-cnns-image-classification">Level 2 · CNNs &amp; Image Classification<a class="headerlink" href="#level-2-cnns-image-classification" title="Permanent link">&para;</a></h2>
+<h3 id="why-cnns-convolution-pooling-receptive-fields"><a href="../level-2/01-why-cnns/">Why CNNs: Convolution, Pooling &amp; Receptive Fields</a><a class="headerlink" href="#why-cnns-convolution-pooling-receptive-fields" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> Why can a Conv2d layer reproduce a Sobel filter?</p>
+<p><strong>Answer:</strong> A convolution layer applies a learned kernel; setting its weights to Sobel gives the same operation</p>
+<p>CNNs learn kernels instead of hand-designing them.</p>
+<p><strong>Q42.</strong> For input size W, kernel K, padding P and stride S, what's the output size?</p>
+<p><strong>Answer:</strong> floor((W - K + 2P) / S) + 1</p>
+<p>The standard formula.</p>
+<p><strong>Q43.</strong> What does max pooling provide?</p>
+<p><strong>Answer:</strong> Down-sampling and some tolerance to small shifts</p>
+<p>It keeps the strongest response in each window.</p>
+<p><strong>Q44.</strong> What is a receptive field?</p>
+<p><strong>Answer:</strong> The region of the input that influences a unit; it grows with stacked layers</p>
+<p>Deeper layers see more.</p>
+<h3 id="building-a-cnn-from-scratch-in-pytorch"><a href="../level-2/02-building-a-cnn/">Building a CNN From Scratch in PyTorch</a><a class="headerlink" href="#building-a-cnn-from-scratch-in-pytorch" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> Why does weight sharing make convolutions parameter-efficient?</p>
+<p><strong>Answer:</strong> The same kernel is reused at every position instead of one weight per pixel connection</p>
+<p>Compare a conv layer with an equivalent fully connected one.</p>
+<p><strong>Q46.</strong> How do you count a Conv2d layer's parameters?</p>
+<p><strong>Answer:</strong> out_channels * (in_channels * kh * kw) + out_channels bias terms</p>
+<p>E.g. 1-&gt;8 channels, 3x3 kernel: 8*9+8 = 80.</p>
+<p><strong>Q47.</strong> Why run a random batch through a new model first?</p>
+<p><strong>Answer:</strong> To confirm tensor shapes before training</p>
+<p>Shape errors show up immediately.</p>
+<p><strong>Q48.</strong> What does flattening do before fully connected layers?</p>
+<p><strong>Answer:</strong> Reshapes feature maps into a vector</p>
+<p>The linear layer expects a fixed size.</p>
+<h3 id="training-a-real-image-classifier"><a href="../level-2/03-training-a-real-classifier/">Training a Real Image Classifier</a><a class="headerlink" href="#training-a-real-image-classifier" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> Why evaluate on a test set the model never saw?</p>
+<p><strong>Answer:</strong> Training accuracy can be inflated by memorization; test accuracy estimates generalization</p>
+<p>Held-out data is the honest estimate.</p>
+<p><strong>Q50.</strong> Why did the lesson switch from CIFAR-10 to FashionMNIST?</p>
+<p><strong>Answer:</strong> The CIFAR-10 mirror was too slow to download in that environment</p>
+<p>The lesson states this honestly.</p>
+<p><strong>Q51.</strong> What does the loss function do during training?</p>
+<p><strong>Answer:</strong> Measures how wrong predictions are so gradients can update weights</p>
+<p>Cross-entropy is typical for classification.</p>
+<p><strong>Q52.</strong> Why shuffle training data each epoch?</p>
+<p><strong>Answer:</strong> So batches aren't ordered and the model doesn't learn order artefacts</p>
+<p>Shuffling improves SGD behaviour.</p>
+<h3 id="data-augmentation-regularization-for-vision-models"><a href="../level-2/04-augmentation-regularization/">Data Augmentation &amp; Regularization for Vision Models</a><a class="headerlink" href="#data-augmentation-regularization-for-vision-models" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> What gap signals overfitting?</p>
+<p><strong>Answer:</strong> Training accuracy much higher than test accuracy</p>
+<p>The gap grows over epochs without regularization.</p>
+<p><strong>Q54.</strong> What does dropout do?</p>
+<p><strong>Answer:</strong> Randomly zeroes activations during training to reduce co-adaptation</p>
+<p>Disabled at evaluation.</p>
+<p><strong>Q55.</strong> What did the lesson learn about heavy regularization on this dataset?</p>
+<p><strong>Answer:</strong> It can trade off accuracy by underfitting; regularization isn't free</p>
+<p>Measure the trade-off.</p>
+<p><strong>Q56.</strong> Why seed both models identically?</p>
+<p><strong>Answer:</strong> So differences come from regularization, not random initialization</p>
+<p>A fair comparison.</p>
+<h3 id="cnn-architectures-resnet-pretrained-backbones"><a href="../level-2/05-cnn-architectures-resnet/">CNN Architectures: ResNet &amp; Pretrained Backbones</a><a class="headerlink" href="#cnn-architectures-resnet-pretrained-backbones" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> What problem do residual (skip) connections address?</p>
+<p><strong>Answer:</strong> Training very deep networks by letting gradients flow through identity shortcuts</p>
+<p>They ease optimization.</p>
+<p><strong>Q58.</strong> ResNet-50 vs ResNet-18: what differs?</p>
+<p><strong>Answer:</strong> ResNet-50 is deeper with many more parameters</p>
+<p>Counted directly in the lesson.</p>
+<p><strong>Q59.</strong> Both ResNets predicted something wrong for the astronaut photo. What does the lesson conclude?</p>
+<p><strong>Answer:</strong> ImageNet has no 'person' class, so they're forced to pick something else: out-of-distribution input</p>
+<p>Reported honestly.</p>
+<p><strong>Q60.</strong> What is a pretrained backbone?</p>
+<p><strong>Answer:</strong> A network already trained on a large dataset (e.g. ImageNet), reused as a feature extractor</p>
+<p>Basis for transfer learning.</p>
+<h3 id="transfer-learning-fine-tuning-a-pretrained-model"><a href="../level-2/06-transfer-learning/">Transfer Learning &amp; Fine-Tuning a Pretrained Model</a><a class="headerlink" href="#transfer-learning-fine-tuning-a-pretrained-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What's frozen-backbone transfer learning?</p>
+<p><strong>Answer:</strong> Keep pretrained layers fixed and train only the new final layer</p>
+<p>Fast but limited.</p>
+<p><strong>Q62.</strong> When does full fine-tuning tend to beat frozen features?</p>
+<p><strong>Answer:</strong> When the target domain differs and you have enough data to adapt all layers</p>
+<p>Compare the two runs.</p>
+<p><strong>Q63.</strong> Why adapt ResNet-18 for FashionMNIST input?</p>
+<p><strong>Answer:</strong> The dataset is grayscale (1 channel) while ResNet expects 3</p>
+<p>Change the first conv or replicate channels.</p>
+<p><strong>Q64.</strong> What is a sensible lr for fine-tuning pretrained layers?</p>
+<p><strong>Answer:</strong> Smaller than training from scratch, to avoid destroying useful features</p>
+<p>Gentle updates preserve learned features.</p>
+<h3 id="evaluating-vision-models-confusion-matrices-per-class-metrics"><a href="../level-2/07-evaluating-vision-models/">Evaluating Vision Models: Confusion Matrices &amp; Per-Class Metrics</a><a class="headerlink" href="#evaluating-vision-models-confusion-matrices-per-class-metrics" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> Why isn't a single accuracy figure enough?</p>
+<p><strong>Answer:</strong> It can hide that some classes are much worse than others</p>
+<p>Use per-class metrics.</p>
+<p><strong>Q66.</strong> What does a confusion matrix show?</p>
+<p><strong>Answer:</strong> How often each true class is predicted as each class</p>
+<p>Off-diagonal entries are mistakes.</p>
+<p><strong>Q67.</strong> Precision for a class means...</p>
+<p><strong>Answer:</strong> Of everything predicted as that class, the share that was right</p>
+<p>Recall is the share of true members found.</p>
+<p><strong>Q68.</strong> Why reload the saved checkpoint to re-evaluate?</p>
+<p><strong>Answer:</strong> To independently confirm the number instead of trusting the training script's print</p>
+<p>Independent verification.</p>
+<h3 id="visualizing-what-a-cnn-learned"><a href="../level-2/08-visualizing-cnn-features/">Visualizing What a CNN Learned</a><a class="headerlink" href="#visualizing-what-a-cnn-learned" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> What does an input-gradient saliency map show?</p>
+<p><strong>Answer:</strong> Which input pixels most affect the prediction</p>
+<p>Raw gradients can be noisy.</p>
+<p><strong>Q70.</strong> What is Grad-CAM-style visualization based on?</p>
+<p><strong>Answer:</strong> Last convolutional layer activations weighted by gradients, giving a coarse heat map</p>
+<p>It highlights regions.</p>
+<p><strong>Q71.</strong> Why check attention maps against real pixel content?</p>
+<p><strong>Answer:</strong> A heat map story can sound plausible but not hold up (e.g. attention on background)</p>
+<p>Quantify center versus border.</p>
+<p><strong>Q72.</strong> What was the lesson's first result?</p>
+<p><strong>Answer:</strong> Surprising, so it was investigated rather than accepted</p>
+<p>Honest reporting.</p>
+<h3 id="class-imbalance-hard-examples-in-vision"><a href="../level-2/09-class-imbalance-vision/">Class Imbalance &amp; Hard Examples in Vision</a><a class="headerlink" href="#class-imbalance-hard-examples-in-vision" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> A class has 30 training images versus ~6,000 for the others. What's the expected effect?</p>
+<p><strong>Answer:</strong> The minority class is poorly learned and under-predicted with a standard loss</p>
+<p>The model optimizes the majority.</p>
+<p><strong>Q74.</strong> What does a class-weighted loss do?</p>
+<p><strong>Answer:</strong> Penalizes minority-class mistakes more heavily</p>
+<p>It can raise minority recall.</p>
+<p><strong>Q75.</strong> What's a risk of heavy class weights?</p>
+<p><strong>Answer:</strong> More false positives for the minority class (lower precision)</p>
+<p>Look at precision and recall.</p>
+<p><strong>Q76.</strong> Other fixes for imbalance include...</p>
+<p><strong>Answer:</strong> Resampling and targeted augmentation of the minority class</p>
+<p>Combine approaches.</p>
+<h3 id="project-a-real-image-classifier-trained-end-to-end"><a href="../level-2/10-project-real-classifier/">Project: a Real Image Classifier Trained End to End</a><a class="headerlink" href="#project-a-real-image-classifier-trained-end-to-end" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> How was the capstone configuration chosen?</p>
+<p><strong>Answer:</strong> From earlier findings: heavy augmentation and dropout underfit, so use a lighter touch</p>
+<p>Evidence-based.</p>
+<p><strong>Q78.</strong> What does independent final evaluation add?</p>
+<p><strong>Answer:</strong> An unbiased estimate on held-out test data</p>
+<p>Don't tune on the test set.</p>
+<p><strong>Q79.</strong> Why track train and test curves every epoch?</p>
+<p><strong>Answer:</strong> To see overfitting or underfitting as it develops</p>
+<p>Diagnose, don't guess.</p>
+<p><strong>Q80.</strong> What's flip-only augmentation's rationale for FashionMNIST?</p>
+<p><strong>Answer:</strong> Horizontal flips preserve clothing labels</p>
+<p>Label-preserving.</p>
+<h2 id="level-3-detection-segmentation-motion">Level 3 · Detection, Segmentation &amp; Motion<a class="headerlink" href="#level-3-detection-segmentation-motion" title="Permanent link">&para;</a></h2>
+<h3 id="object-detection-fundamentals-boxes-iou-anchors"><a href="../level-3/01-object-detection-fundamentals/">Object Detection Fundamentals: Boxes, IoU &amp; Anchors</a><a class="headerlink" href="#object-detection-fundamentals-boxes-iou-anchors" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> What is IoU?</p>
+<p><strong>Answer:</strong> Intersection over Union: overlap area divided by combined area of two boxes</p>
+<p>1 is a perfect match.</p>
+<p><strong>Q82.</strong> Two 10x10 boxes overlap by half (x from 0-10 and 5-15). What's the IoU?</p>
+<p><strong>Answer:</strong> 1/3 (intersection 50, union 150)</p>
+<p>Half overlap is only IoU 0.33.</p>
+<p><strong>Q83.</strong> What are anchors?</p>
+<p><strong>Answer:</strong> Predefined boxes of several scales and ratios that a detector refines</p>
+<p>The standard set has 9 anchors.</p>
+<p><strong>Q84.</strong> Why verify IoU against hand-computed cases first?</p>
+<p><strong>Answer:</strong> Wrong IoU would quietly corrupt every later metric</p>
+<p>Trust but verify.</p>
+<h3 id="running-evaluating-a-real-object-detector"><a href="../level-3/02-running-a-real-detector/">Running &amp; Evaluating a Real Object Detector</a><a class="headerlink" href="#running-evaluating-a-real-object-detector" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> Faster R-CNN trained on COCO detects how many classes?</p>
+<p><strong>Answer:</strong> 91 category ids (80 used) in COCO's label space</p>
+<p>The lesson cites 91 classes.</p>
+<p><strong>Q86.</strong> What does a detection output include?</p>
+<p><strong>Answer:</strong> Boxes, class labels and confidence scores</p>
+<p>Filter by score threshold.</p>
+<p><strong>Q87.</strong> How should a detector behave on a blank image?</p>
+<p><strong>Answer:</strong> Ideally return no confident detections, unlike a classifier that always picks a class</p>
+<p>Detectors can say nothing.</p>
+<p><strong>Q88.</strong> Why threshold detections by score?</p>
+<p><strong>Answer:</strong> To drop low-confidence boxes that are likely false positives</p>
+<p>Trade recall for precision.</p>
+<h3 id="semantic-segmentation-fundamentals"><a href="../level-3/03-semantic-segmentation-fundamentals/">Semantic Segmentation Fundamentals</a><a class="headerlink" href="#semantic-segmentation-fundamentals" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> What does semantic segmentation output?</p>
+<p><strong>Answer:</strong> A class label for every pixel</p>
+<p>A dense prediction.</p>
+<p><strong>Q90.</strong> Why isn't pixel accuracy enough?</p>
+<p><strong>Answer:</strong> Large background classes dominate, hiding bad performance on small objects</p>
+<p>Per-class IoU is stricter.</p>
+<p><strong>Q91.</strong> How is per-class IoU computed?</p>
+<p><strong>Answer:</strong> Pixels correct for the class divided by the union of predicted and true pixels of that class</p>
+<p>Mean IoU averages classes.</p>
+<p><strong>Q92.</strong> Why use tiny hand-verifiable examples?</p>
+<p><strong>Answer:</strong> So every number can be checked by eye</p>
+<p>Verify metrics before trusting them.</p>
+<h3 id="running-a-real-segmentation-model"><a href="../level-3/04-running-a-real-segmentation-model/">Running a Real Segmentation Model</a><a class="headerlink" href="#running-a-real-segmentation-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> DeepLabV3 outputs what compared with a detector?</p>
+<p><strong>Answer:</strong> A per-pixel class map instead of bounding boxes</p>
+<p>argmax over the class channel.</p>
+<p><strong>Q94.</strong> How do you get the mask from output logits?</p>
+<p><strong>Answer:</strong> argmax over the class dimension</p>
+<p>Each pixel gets the highest-scoring class.</p>
+<p><strong>Q95.</strong> How many classes does the VOC-trained model use?</p>
+<p><strong>Answer:</strong> 21 (20 objects plus background)</p>
+<p>PASCAL VOC.</p>
+<p><strong>Q96.</strong> What does segmentation give that detection doesn't?</p>
+<p><strong>Answer:</strong> The object's exact shape, not just a rectangle</p>
+<p>At more compute cost.</p>
+<h3 id="instance-segmentation-vs-semantic-segmentation"><a href="../level-3/05-instance-vs-semantic-segmentation/">Instance Segmentation vs Semantic Segmentation</a><a class="headerlink" href="#instance-segmentation-vs-semantic-segmentation" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> Two people stand side by side. What does semantic segmentation say?</p>
+<p><strong>Answer:</strong> Both are 'person' pixels with no separation between individuals</p>
+<p>It labels classes, not instances.</p>
+<p><strong>Q98.</strong> What does Mask R-CNN add?</p>
+<p><strong>Answer:</strong> A separate mask per detected instance</p>
+<p>It separates the two people.</p>
+<p><strong>Q99.</strong> When do you need instance segmentation?</p>
+<p><strong>Answer:</strong> When you must count or track individual objects of the same class</p>
+<p>Semantic can't count touching objects.</p>
+<p><strong>Q100.</strong> What's the cost of instance segmentation?</p>
+<p><strong>Answer:</strong> More compute and a more complex model</p>
+<p>Choose per need.</p>
+<h3 id="pose-estimation-keypoint-detection"><a href="../level-3/06-pose-estimation-keypoints/">Pose Estimation &amp; Keypoint Detection</a><a class="headerlink" href="#pose-estimation-keypoint-detection" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> How many keypoints does COCO pose use?</p>
+<p><strong>Answer:</strong> 17</p>
+<p>Nose, eyes, ears, shoulders, elbows, wrists, hips, knees, ankles.</p>
+<p><strong>Q102.</strong> The astronaut photo is cropped at chest height. What did confidence scores reveal?</p>
+<p><strong>Answer:</strong> Which keypoints were actually visible versus guessed</p>
+<p>Low scores mean forced guesses.</p>
+<p><strong>Q103.</strong> Why filter keypoints by confidence?</p>
+<p><strong>Answer:</strong> Low-confidence points can be wildly wrong</p>
+<p>Don't draw guesses as facts.</p>
+<p><strong>Q104.</strong> What can pose estimation feed?</p>
+<p><strong>Answer:</strong> Activity recognition and gesture analysis</p>
+<p>Keypoint sequences describe motion.</p>
+<h3 id="optical-flow-measuring-motion-between-frames"><a href="../level-3/07-optical-flow/">Optical Flow: Measuring Motion Between Frames</a><a class="headerlink" href="#optical-flow-measuring-motion-between-frames" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What does optical flow estimate?</p>
+<p><strong>Answer:</strong> Apparent motion of pixels between frames</p>
+<p>A motion vector per point or pixel.</p>
+<p><strong>Q106.</strong> What's the difference between Lucas-Kanade and dense flow?</p>
+<p><strong>Answer:</strong> Lucas-Kanade tracks sparse points; dense flow estimates motion for every pixel</p>
+<p>Choose by need.</p>
+<p><strong>Q107.</strong> Why use a known exact pixel shift as a test?</p>
+<p><strong>Answer:</strong> It provides ground truth to measure algorithm accuracy</p>
+<p>Real video rarely gives truth.</p>
+<p><strong>Q108.</strong> What assumption does flow rely on?</p>
+<p><strong>Answer:</strong> Brightness constancy and small motion between frames</p>
+<p>It fails with large jumps.</p>
+<h3 id="object-tracking-across-video-frames"><a href="../level-3/08-object-tracking/">Object Tracking Across Video Frames</a><a class="headerlink" href="#object-tracking-across-video-frames" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What did OpenCV 5.0 no longer expose?</p>
+<p><strong>Answer:</strong> The classic CSRT and KCF trackers</p>
+<p>Same kind of removal as Haar cascades.</p>
+<p><strong>Q110.</strong> Why was an identical-looking distractor placed close to the target?</p>
+<p><strong>Answer:</strong> To test whether tracking survives visual ambiguity</p>
+<p>Appearance trackers can jump.</p>
+<p><strong>Q111.</strong> What helps trackers survive ambiguity?</p>
+<p><strong>Answer:</strong> Motion models and re-detection or association logic</p>
+<p>Combine detection and tracking.</p>
+<p><strong>Q112.</strong> Why use a synthetic video with a known trajectory?</p>
+<p><strong>Answer:</strong> You can measure tracking error exactly</p>
+<p>Ground truth.</p>
+<h3 id="ocr-detecting-recognizing-text-in-images"><a href="../level-3/09-ocr-text-detection-recognition/">OCR: Detecting &amp; Recognizing Text in Images</a><a class="headerlink" href="#ocr-detecting-recognizing-text-in-images" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> What's the first OCR check in the lesson?</p>
+<p><strong>Answer:</strong> Exact match on clean rendered text, to establish a baseline</p>
+<p>Then degrade systematically.</p>
+<p><strong>Q114.</strong> Which degradations did the lesson apply?</p>
+<p><strong>Answer:</strong> Blur, rotation and noise, measuring character accuracy</p>
+<p>Find where OCR breaks.</p>
+<p><strong>Q115.</strong> Does OCR degrade uniformly?</p>
+<p><strong>Answer:</strong> No, different degradations break it at different points</p>
+<p>That's why you measure.</p>
+<p><strong>Q116.</strong> How do you improve OCR before recognition?</p>
+<p><strong>Answer:</strong> Deskew, denoise and threshold the image</p>
+<p>Preprocessing matters.</p>
+<h3 id="project-a-real-multi-stage-vision-pipeline"><a href="../level-3/10-project-multi-stage-pipeline/">Project: a Real Multi-Stage Vision Pipeline</a><a class="headerlink" href="#project-a-real-multi-stage-vision-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> What are the pipeline's stages?</p>
+<p><strong>Answer:</strong> Detect the sign, track it across frames, then OCR its text</p>
+<p>Detect, track, read.</p>
+<p><strong>Q118.</strong> Why track instead of detecting every frame?</p>
+<p><strong>Answer:</strong> Tracking is cheaper and keeps identity across frames</p>
+<p>Detect periodically, track between.</p>
+<p><strong>Q119.</strong> The video is synthetic. Is that disclosed?</p>
+<p><strong>Answer:</strong> Yes: stages are real, the input video is synthetic, stated plainly</p>
+<p>Honesty.</p>
+<p><strong>Q120.</strong> What can go wrong in multi-stage pipelines?</p>
+<p><strong>Answer:</strong> Errors compound: a bad detection ruins tracking and OCR</p>
+<p>Evaluate each stage and the whole.</p>
+<h2 id="level-4-modern-architectures-production-cv">Level 4 · Modern Architectures &amp; Production CV<a class="headerlink" href="#level-4-modern-architectures-production-cv" title="Permanent link">&para;</a></h2>
+<h3 id="vision-transformers-concepts-real-inference"><a href="../level-4/01-vision-transformers/">Vision Transformers: Concepts &amp; Real Inference</a><a class="headerlink" href="#vision-transformers-concepts-real-inference" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> How does ViT-B/16 turn an image into tokens?</p>
+<p><strong>Answer:</strong> It splits it into 16x16 patches and embeds each patch linearly</p>
+<p>Patches become a sequence.</p>
+<p><strong>Q122.</strong> The astronaut photo is out-of-distribution for ImageNet classifiers. Why?</p>
+<p><strong>Answer:</strong> ImageNet has no 'person' class, so any prediction is forced into another class</p>
+<p>The coffee cup is in-distribution ('espresso').</p>
+<p><strong>Q123.</strong> What's a trade-off of ViTs versus CNNs?</p>
+<p><strong>Answer:</strong> ViTs have fewer inductive biases and usually need more data or pretraining</p>
+<p>CNNs bake in locality.</p>
+<p><strong>Q124.</strong> What does self-attention let a ViT do?</p>
+<p><strong>Answer:</strong> Relate every patch to every other patch globally</p>
+<p>Global context from the first layer.</p>
+<h3 id="image-embeddings-similarity-search"><a href="../level-4/02-image-embeddings-similarity-search/">Image Embeddings &amp; Similarity Search</a><a class="headerlink" href="#image-embeddings-similarity-search" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> What's an image embedding?</p>
+<p><strong>Answer:</strong> A vector from a network's penultimate layer capturing visual features</p>
+<p>Used for similarity.</p>
+<p><strong>Q126.</strong> What does cosine similarity compare?</p>
+<p><strong>Answer:</strong> The angle between two vectors, ignoring length</p>
+<p>1 means the same direction.</p>
+<p><strong>Q127.</strong> Why can nearest neighbours look counter-intuitive?</p>
+<p><strong>Answer:</strong> Embeddings capture what the network learned, which may not match human notions of similarity</p>
+<p>The lesson investigated an unexpected pattern.</p>
+<p><strong>Q128.</strong> How would you scale similarity search to millions of images?</p>
+<p><strong>Answer:</strong> An approximate nearest-neighbour index (e.g. a vector database)</p>
+<p>Exact scan is O(n) per query.</p>
+<h3 id="self-supervised-few-shot-vision-concepts"><a href="../level-4/03-self-supervised-few-shot/">Self-Supervised &amp; Few-Shot Vision Concepts</a><a class="headerlink" href="#self-supervised-few-shot-vision-concepts" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> How does a prototypical classifier classify with few labels?</p>
+<p><strong>Answer:</strong> Average each class's support embeddings into a prototype and assign the nearest</p>
+<p>It reuses learned embeddings.</p>
+<p><strong>Q130.</strong> Why is it 'remarkably effective' here?</p>
+<p><strong>Answer:</strong> Good pretrained embeddings already separate classes; few examples just locate prototypes</p>
+<p>The embedding does the work.</p>
+<p><strong>Q131.</strong> What's self-supervised learning?</p>
+<p><strong>Answer:</strong> Learning representations from unlabeled data using a pretext task</p>
+<p>E.g. contrastive learning.</p>
+<p><strong>Q132.</strong> When does few-shot fail?</p>
+<p><strong>Answer:</strong> When embeddings don't capture the distinction the new classes need</p>
+<p>Domain gaps hurt.</p>
+<h3 id="image-generation-basics-gans-diffusion"><a href="../level-4/04-image-generation-basics/">Image Generation Basics: GANs &amp; Diffusion</a><a class="headerlink" href="#image-generation-basics-gans-diffusion" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> In a GAN, what do the two networks do?</p>
+<p><strong>Answer:</strong> The generator makes fakes; the discriminator tries to tell fake from real</p>
+<p>They're trained adversarially.</p>
+<p><strong>Q134.</strong> The lesson's discriminator was still winning after 10 epochs. What does that suggest?</p>
+<p><strong>Answer:</strong> Training hadn't reached balance, so generation quality was still limited</p>
+<p>An honest trajectory.</p>
+<p><strong>Q135.</strong> Why evaluate the generator with an independent trained classifier?</p>
+<p><strong>Answer:</strong> Judging by eye is subjective; a classifier gives a quantitative signal</p>
+<p>Independent evaluation.</p>
+<p><strong>Q136.</strong> What's the core idea of diffusion models?</p>
+<p><strong>Answer:</strong> Learn to reverse a gradual noising process to generate images</p>
+<p>Iterative denoising.</p>
+<h3 id="evaluating-generative-retrieval-vision-systems"><a href="../level-4/05-evaluating-generative-retrieval/">Evaluating Generative &amp; Retrieval Vision Systems</a><a class="headerlink" href="#evaluating-generative-retrieval-vision-systems" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> Precision@k means...</p>
+<p><strong>Answer:</strong> Of the top k results, the share that are relevant</p>
+<p>Recall@k is the share of all relevant items found in the top k.</p>
+<p><strong>Q138.</strong> Recall@k means...</p>
+<p><strong>Answer:</strong> Of all relevant items, the share found in the top k</p>
+<p>Both depend on k.</p>
+<p><strong>Q139.</strong> What is mode collapse?</p>
+<p><strong>Answer:</strong> A generator producing a few repeated patterns instead of varied outputs</p>
+<p>Check diversity.</p>
+<p><strong>Q140.</strong> How did the lesson measure diversity?</p>
+<p><strong>Answer:</strong> Pairwise embedding distances among generated images</p>
+<p>Quantitative, not visual.</p>
+<h3 id="scaling-vision-inference-batching-latency"><a href="../level-4/06-scaling-vision-inference/">Scaling Vision Inference: Batching &amp; Latency</a><a class="headerlink" href="#scaling-vision-inference-batching-latency" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> Why does batching raise throughput?</p>
+<p><strong>Answer:</strong> Hardware processes many images in parallel, amortizing overhead</p>
+<p>256 single calls versus one batched call.</p>
+<p><strong>Q142.</strong> What's the trade-off of large batches?</p>
+<p><strong>Answer:</strong> Higher per-request latency and diminishing returns past a peak</p>
+<p>The lesson measured a peak.</p>
+<p><strong>Q143.</strong> Why measure rather than assume throughput?</p>
+<p><strong>Answer:</strong> Hardware and model details create real peaks and plateaus</p>
+<p>Measure, don't assume.</p>
+<p><strong>Q144.</strong> Which metric matters for an interactive app?</p>
+<p><strong>Answer:</strong> Tail latency (e.g. p95) for single requests</p>
+<p>Users feel latency.</p>
+<h3 id="vision-model-robustness-common-failure-modes"><a href="../level-4/07-vision-model-robustness/">Vision Model Robustness &amp; Common Failure Modes</a><a class="headerlink" href="#vision-model-robustness-common-failure-modes" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> What is an FGSM attack?</p>
+<p><strong>Answer:</strong> Adding a small perturbation in the direction of the loss gradient's sign to fool the model</p>
+<p>Tiny, imperceptible changes can flip predictions.</p>
+<p><strong>Q146.</strong> What does adversarial vulnerability imply?</p>
+<p><strong>Answer:</strong> Models can fail on inputs humans find nearly identical</p>
+<p>Robustness isn't accuracy.</p>
+<p><strong>Q147.</strong> Which common failure mode is distribution shift?</p>
+<p><strong>Answer:</strong> Test data differing from training (lighting, camera, domain)</p>
+<p>Validate on realistic conditions.</p>
+<p><strong>Q148.</strong> How can you improve robustness?</p>
+<p><strong>Answer:</strong> Augmentation, adversarial training and testing under realistic perturbations</p>
+<p>Measure robustness explicitly.</p>
+<h3 id="bias-fairness-considerations-in-computer-vision"><a href="../level-4/08-bias-fairness-in-cv/">Bias &amp; Fairness Considerations in Computer Vision</a><a class="headerlink" href="#bias-fairness-considerations-in-computer-vision" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> What's a well-documented bias mechanism the lesson tested?</p>
+<p><strong>Answer:</strong> Differential accuracy under varied conditions such as brightness</p>
+<p>Performance gaps across groups or conditions.</p>
+<p><strong>Q150.</strong> Why report accuracy per subgroup?</p>
+<p><strong>Answer:</strong> An overall average can hide large gaps for some groups</p>
+<p>Disaggregate.</p>
+<p><strong>Q151.</strong> What's a common source of bias in vision systems?</p>
+<p><strong>Answer:</strong> Unrepresentative training data</p>
+<p>Data coverage matters.</p>
+<p><strong>Q152.</strong> What should you do when you find a gap?</p>
+<p><strong>Answer:</strong> Document it, improve data/model and decide whether the use is appropriate</p>
+<p>Scale care with harm.</p>
+<h3 id="choosing-the-right-cv-approach-for-a-real-problem"><a href="../level-4/09-choosing-the-right-approach/">Choosing the Right CV Approach for a Real Problem</a><a class="headerlink" href="#choosing-the-right-cv-approach-for-a-real-problem" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> When is a classical CV pipeline the right choice?</p>
+<p><strong>Answer:</strong> Controlled setting, simple well-defined task and little data (e.g. a document scanner)</p>
+<p>Simple beats complex when it works.</p>
+<p><strong>Q154.</strong> When do you reach for a pretrained deep model?</p>
+<p><strong>Answer:</strong> Complex variation and enough data or a good pretrained backbone</p>
+<p>Transfer learning is the default.</p>
+<p><strong>Q155.</strong> What should you try first on a new problem?</p>
+<p><strong>Answer:</strong> The simplest baseline that could work, then measure</p>
+<p>Establish a baseline.</p>
+<p><strong>Q156.</strong> What factors guide the choice?</p>
+<p><strong>Answer:</strong> Data available, accuracy needs, latency, hardware and maintainability</p>
+<p>Match method to constraints.</p>
+<h3 id="capstone-a-real-end-to-end-computer-vision-application"><a href="../level-4/10-capstone-end-to-end-cv-application/">Capstone: a Real End-to-End Computer Vision Application</a><a class="headerlink" href="#capstone-a-real-end-to-end-computer-vision-application" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What does the capstone combine?</p>
+<p><strong>Answer:</strong> A trained classifier within an automated quality-control pipeline</p>
+<p>End to end.</p>
+<p><strong>Q158.</strong> Why define metrics before deployment?</p>
+<p><strong>Answer:</strong> So pass/fail decisions and costs of errors are explicit</p>
+<p>False passes and false rejects cost differently.</p>
+<p><strong>Q159.</strong> How should a QC system handle low-confidence items?</p>
+<p><strong>Answer:</strong> Route them to human review</p>
+<p>Use confidence thresholds.</p>
+<p><strong>Q160.</strong> What should you monitor after deployment?</p>
+<p><strong>Answer:</strong> Input drift and accuracy against periodic labeled samples</p>
+<p>Models degrade as data shifts.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> A photo loaded with OpenCV is shown with a blue face when plotted with another library. What's the cause?</p>
+<p><strong>Answer:</strong> OpenCV loads BGR while the plotting library expects RGB; convert with cvtColor</p>
+<p>Channel order mismatch.</p>
+<p><strong>Q162.</strong> You shrink a 4000x3000 photo to thumbnails. Which interpolation is usual?</p>
+<p><strong>Answer:</strong> INTER_AREA</p>
+<p>It reduces aliasing when downscaling.</p>
+<p><strong>Q163.</strong> Lighting varies across a scanned page. Which thresholding fits best?</p>
+<p><strong>Answer:</strong> Adaptive thresholding (a threshold per neighbourhood)</p>
+<p>Global thresholds fail with uneven lighting.</p>
+<p><strong>Q164.</strong> Counting coins: area filtering still counts non-coin blobs. What extra check helps?</p>
+<p><strong>Answer:</strong> Circularity (4πA/P²) close to 1</p>
+<p>Combine area and shape.</p>
+<p><strong>Q165.</strong> Why does RANSAC matter when estimating a homography from matched keypoints?</p>
+<p><strong>Answer:</strong> It rejects outlier matches so wrong pairs don't distort the transform</p>
+<p>Fit to inliers.</p>
+<p><strong>Q166.</strong> Template matching works on a test image but fails on a zoomed copy. Why?</p>
+<p><strong>Answer:</strong> It compares raw pixels at fixed scale and rotation, so it isn't scale or rotation invariant</p>
+<p>Use features or learned detectors.</p>
+<p><strong>Q167.</strong> A 3x3 conv with padding 1 and stride 1 on a 28x28 input gives what spatial size?</p>
+<p><strong>Answer:</strong> 28x28</p>
+<p>floor((28-3+2)/1)+1 = 28.</p>
+<p><strong>Q168.</strong> Training accuracy is 99% and test accuracy 82%. What is happening and what helps?</p>
+<p><strong>Answer:</strong> Overfitting; add augmentation, dropout or more data</p>
+<p>A large train-test gap signals overfitting.</p>
+<p><strong>Q169.</strong> You fine-tune a pretrained ResNet on grayscale FashionMNIST. What must change?</p>
+<p><strong>Answer:</strong> The first layer must accept 1 channel (or replicate channels) and the head must match 10 classes</p>
+<p>Match the input and output shapes.</p>
+<p><strong>Q170.</strong> Overall accuracy is 94% but the 'sandal' class has 30 training images. What should you check?</p>
+<p><strong>Answer:</strong> Per-class precision and recall, since accuracy can hide a neglected minority class</p>
+<p>Use a confusion matrix.</p>
+<p><strong>Q171.</strong> A heat map highlights the image background for a clothing label. What does it suggest?</p>
+<p><strong>Answer:</strong> The model may rely on spurious context; investigate the data</p>
+<p>Attention maps must be checked against content.</p>
+<p><strong>Q172.</strong> Two people touch in a photo and you need to count them. Which model type?</p>
+<p><strong>Answer:</strong> Instance segmentation (e.g. Mask R-CNN)</p>
+<p>Semantic masks merge same-class pixels.</p>
+<p><strong>Q173.</strong> A segmentation model has 95% pixel accuracy but ignores a small object class. Which metric exposes it?</p>
+<p><strong>Answer:</strong> Per-class IoU (mean IoU)</p>
+<p>Large background classes dominate pixel accuracy.</p>
+<p><strong>Q174.</strong> Optical flow on frames where the object moves 80 pixels. What assumption is violated?</p>
+<p><strong>Answer:</strong> Small motion between frames; use pyramids or larger-range methods</p>
+<p>LK assumes small displacements.</p>
+<p><strong>Q175.</strong> OCR accuracy drops sharply on a rotated receipt. What do you do?</p>
+<p><strong>Answer:</strong> Deskew (correct rotation) before recognition</p>
+<p>Preprocess first.</p>
+<p><strong>Q176.</strong> You need to retrieve similar product photos from 5 million images. What's the standard approach?</p>
+<p><strong>Answer:</strong> Compute embeddings and use an approximate nearest-neighbour index</p>
+<p>Exact scans are too slow.</p>
+<p><strong>Q177.</strong> A GAN generator's samples all look alike. What's this called and how do you measure it?</p>
+<p><strong>Answer:</strong> Mode collapse; measure diversity with pairwise embedding distances</p>
+<p>Diversity must be quantified.</p>
+<p><strong>Q178.</strong> Latency matters for a live inspection line. Which metric should you watch?</p>
+<p><strong>Answer:</strong> Per-request tail latency (p95/p99), not only average throughput</p>
+<p>Batching raises throughput but can raise latency.</p>
+<p><strong>Q179.</strong> A QC classifier is 99% accurate on lab images but degrades on the factory floor. What's the likely cause?</p>
+<p><strong>Answer:</strong> Distribution shift (lighting, camera, background); collect and validate on production-like data</p>
+<p>Test under realistic conditions.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="intersection-over-union">Intersection over Union<a class="headerlink" href="#intersection-over-union" title="Permanent link">&para;</a></h3>
+<p>Implement iou(a, b) for boxes given as (x1, y1, x2, y2). Return intersection area divided by union area, and 0.0 when the boxes don't overlap.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>def iou(a, b):
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    # boxes are (x1, y1, x2, y2); return intersection area / union area
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    return 0.0
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>cases = [
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ("identical",    (0, 0, 10, 10), (0, 0, 10, 10)),
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    ("half overlap", (0, 0, 10, 10), (5, 0, 15, 10)),
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ("disjoint",     (0, 0, 10, 10), (20, 20, 30, 30)),
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    ("contained",    (0, 0, 10, 10), (2, 2, 6, 6)),
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>]
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>for name, a, b in cases:
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    print("%-12s %.3f" % (name, iou(a, b)))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>identical    1.000
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>half overlap 0.333
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>disjoint     0.000
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>contained    0.160
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+def iou(a, b):
+    ax1, ay1, ax2, ay2 = a
+    bx1, by1, bx2, by2 = b
+    iw = max(0, min(ax2, bx2) - max(ax1, bx1))
+    ih = max(0, min(ay2, by2) - max(ay1, by1))
+    inter = iw * ih
+    union = (ax2 - ax1) * (ay2 - ay1) + (bx2 - bx1) * (by2 - by1) - inter
+    return inter / union if union else 0.0
+
+cases = [
+    ("identical",    (0, 0, 10, 10), (0, 0, 10, 10)),
+    ("half overlap", (0, 0, 10, 10), (5, 0, 15, 10)),
+    ("disjoint",     (0, 0, 10, 10), (20, 20, 30, 30)),
+    ("contained",    (0, 0, 10, 10), (2, 2, 6, 6)),
+]
+for name, a, b in cases:
+    print("%-12s %.3f" % (name, iou(a, b)))
+```
+
+The overlap width and height are clamped at 0 for disjoint boxes. A half-overlapping pair has intersection 50 and union 150, so IoU is 1/3, not 1/2. Verified by running the solution.
+</code></pre></div>
+<h3 id="per-class-precision-recall-and-f1">Per-class precision, recall and F1<a class="headerlink" href="#per-class-precision-recall-and-f1" title="Permanent link">&para;</a></h3>
+<p>From a confusion matrix (rows = true class, columns = predicted class) compute each class's precision, recall and F1, plus overall accuracy.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>CLASSES = ["shirt", "sandal", "bag"]
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a># rows = true class, columns = predicted class
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>CM = [
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    [50,  2,  8],
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    [ 4, 30,  1],
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    [10,  0, 90],
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>]
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>def per_class(cm):
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    # return [(precision, recall, f1), ...] for each class, rows = true, cols = predicted
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    return [(0.0, 0.0, 0.0)] * len(cm)
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>total = sum(sum(r) for r in CM)
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>acc = sum(CM[i][i] for i in range(len(CM))) / total
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>print("accuracy %.3f" % acc)
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>for name, (p, r, f) in zip(CLASSES, per_class(CM)):
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    print("%-7s P=%.3f R=%.3f F1=%.3f" % (name, p, r, f))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>accuracy 0.872
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>shirt   P=0.781 R=0.833 F1=0.806
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>sandal  P=0.938 R=0.857 F1=0.896
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>bag     P=0.909 R=0.900 F1=0.905
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+CLASSES = ["shirt", "sandal", "bag"]
+# rows = true class, columns = predicted class
+CM = [
+    [50,  2,  8],
+    [ 4, 30,  1],
+    [10,  0, 90],
+]
+
+def per_class(cm):
+    n = len(cm)
+    out = []
+    for i in range(n):
+        tp = cm[i][i]
+        pred = sum(cm[r][i] for r in range(n))
+        true = sum(cm[i])
+        precision = tp / pred if pred else 0.0
+        recall = tp / true if true else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+        out.append((precision, recall, f1))
+    return out
+
+total = sum(sum(r) for r in CM)
+acc = sum(CM[i][i] for i in range(len(CM))) / total
+print("accuracy %.3f" % acc)
+for name, (p, r, f) in zip(CLASSES, per_class(CM)):
+    print("%-7s P=%.3f R=%.3f F1=%.3f" % (name, p, r, f))
+```
+
+Precision divides a class's diagonal entry by its column sum, recall by its row sum. Accuracy hides that 'shirt' has the weakest precision. Verified by running the solution.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">Computer Vision Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/ai-ml-mastery-path/">AI/ML</a></li><li><a href="https://learnmasterypath.com/llm-dev-mastery-path/">LLM Dev</a></li><li><a href="https://learnmasterypath.com/rag-mastery-path/">RAG</a></li><li><a href="https://learnmasterypath.com/edge-ai-mastery-path/">Edge AI</a></li><li><a href="https://learnmasterypath.com/claude-training-mastery-path/">Claude Training</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../level-1/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/computer-vision-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/computer-vision-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
